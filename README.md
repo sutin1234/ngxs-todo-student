@@ -1,6 +1,45 @@
-# NgNgxs
+<img src="https://i.ytimg.com/vi/SGj11j4hxmg/maxresdefault.jpg">
+# Angular9 StateManagement Library [NGXS]
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.9.
+
+## Setup tools for development
+
+NGXS is a state management pattern + library for Angular
+visit ngxs website <a href="https://www.ngxs.io/">https://www.ngxs.io</a>
+
+## Concept NGXS
+
+<img src="https://gblobscdn.gitbook.com/assets%2F-L9CoGJCq3UCfKJ7RCUg%2F-Lqo8CEiTGbFfHN-MPem%2F-Lqo8EeI9WI8AjKSCgMo%2Fdiagram.png?alt=media">
+
+## Install NGXS Tools
+
+```bash
+# Install yarn or NPM 5+ Globaly
+$ yarn add @ngxs/{store,logger-plugin,devtools-plugin}@dev
+$ npm install yarn add @ngxs/{store,logger-plugin,devtools-plugin}@dev
+```
+
+```bash
+# Install NGXS CLI
+$ npm install @ngxs/cli -g
+$ yarn global add @ngxs/cli
+see more ==> [https://www.ngxs.io/plugins/cli]
+```
+
+```bash
+# Add to app.module.ts
+NgxsModule.forRoot([StudentState], { developmentMode: !environment.production }),
+NgxsLoggerPluginModule.forRoot(),
+NgxsReduxDevtoolsPluginModule.forRoot()
+```
+
+```bash
+# Clone Repository for development test
+$ git clone https://github.com/sutin1234/ngxs-todo-student.git
+$ cd ngxs-todo-student && npm install
+$ yarn start | npm run start | ng serve # serve project
+```
 
 ## Development server
 
