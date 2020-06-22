@@ -3,16 +3,16 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.9.
 
-## Setup tools for development
+### Setup tools for development
 
 NGXS is a state management pattern + library for Angular
 visit ngxs website <a href="https://www.ngxs.io/">https://www.ngxs.io</a>
 
-## Concept NGXS
+### Concept NGXS
 
 <img src="https://gblobscdn.gitbook.com/assets%2F-L9CoGJCq3UCfKJ7RCUg%2F-Lqo8CEiTGbFfHN-MPem%2F-Lqo8EeI9WI8AjKSCgMo%2Fdiagram.png?alt=media">
 
-## Install NGXS Tools
+### Install NGXS Tools
 
 ```bash
 # Install yarn or NPM 5+ Globaly
@@ -39,6 +39,23 @@ NgxsReduxDevtoolsPluginModule.forRoot()
 $ git clone https://github.com/sutin1234/ngxs-todo-student.git
 $ cd ngxs-todo-student && npm install
 $ yarn start | npm run start | ng serve # serve project
+```
+
+### Project Struture
+
+```
++--- app
+|    +--- store
+|         +--- actions
+|              --- student.action.ts
+|         +--- states
+|              --- student.state.ts
+|         +--- models
+|              --- student.model.ts
++--- components
+|    +--- app.component.ts
+|    +--- app.component.html
+|    +--- app.component.css
 ```
 
 ## Development server
