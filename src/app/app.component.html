@@ -1,0 +1,15 @@
+<div class="left">
+
+    <input type="number" placeholder="regId" #id>
+    <input type="text" placeholder="name" #name>
+    <input type="text" placeholder="address" #address>
+
+    <button (click)="addStudent(id.value,name.value,address.value)">Add a Student</button>
+</div>
+
+<h3>Student Registry</h3>
+<ul>
+    <li (click)="delStudent(student.regId)" *ngFor="let student of students$ | async ">
+        <h6>{{ student.name }}</h6>
+    </li>
+</ul>
